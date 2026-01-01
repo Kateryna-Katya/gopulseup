@@ -1,0 +1,108 @@
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.home-container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home-title{
+    font-family: 'Abhaya Libre', serif;
+        font-weight: 800;
+        font-size: 80px;
+        text-align: center;
+        color: #fff;
+        margin-top: 40px;
+}
+.home-text{
+    margin-top: 10px;
+    font-family: 'Abhaya Libre', serif;
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fff;
+}
+.hero-button{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+}
+.btn-text{
+    position: absolute;
+    font-family: 'Abhaya Libre', serif;
+        font-weight: 800;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+        top: 25%;
+left: 30%;
+transform: translateX(-10%);
+z-index: 2;
+}
+.hero-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.disclaimer-wrapper{
+    backdrop-filter: blur(8.100000381469727px);
+        background: rgba(5, 3, 0, 0.5);
+padding: 18px 35px 0;
+    width: 380px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.disclaimer-title{
+    font-size: 24px;
+        color: #ff8c00;
+        text-align: left;
+        margin-bottom: 13px;
+}
+.disclaimer-text{
+    font-family: "Afacad", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+   .home-section{
+    background-image: url("/img/home/desk.png");
+   }
+   .home-container{
+    position: relative;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 100px;
+   }
+.home-wrapper{
+    width: 589px;
+    margin-left: 75px;
+}
+.home-title{
+    font-size: 96px;
+    margin-top: 20px;
+}
+.home-text{
+font-size: 36px;
+    text-align: center;
+}
+.hero-img{
+    position: absolute;
+    z-index: 2;
+    top: 9%;
+    right: 10%;
+}
+.disclaimer-wrapper{
+    padding: 30px 70px;
+        width: 734px;
+        height: 212px;
+        margin-left: 0;
+        margin-right: auto;
+}
+}
