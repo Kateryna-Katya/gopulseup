@@ -2,55 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/gopulseup/favicon.svg" />
+    <link rel="icon" type="image/png" href="/gopulseup/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <title>Inner Fire</title>
     <script type="module" crossorigin src="/gopulseup/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/gopulseup/assets/styles-X9THPhCB.css">
+    <link rel="stylesheet" crossorigin href="/gopulseup/assets/styles-DHuuhpfV.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="home-section" id="home">
+    <div class="container home-container">
+        <div class="home-wrapper">
+        <h1 class="home-title">Inner Fire</h1>
+        <p class="home-text">It's got this steady beat to it, things get pretty intense, and you just zone in completely.</p>
+        <a class="hero-button" href="#demo">
+<img class="hero-btn" src="/gopulseup/assets/btn-CWuLYCnz.png" alt="Feel the Heat" loading="lazy">
+<p class="btn-text">Feel the Heat</p>
+        </a>
+    </div>
+        <picture>
+            <source srcset="/gopulseup/assets/slotmachine-desk-D7NEZu9t.png 1x, /gopulseup/assets/slotmachine-desk@2x-D2p_e1Yb.png 2x" media="(min-width: 1440px)" />
+            <source srcset="/gopulseup/assets/slotmachine-mob-kQRhqF8q.png 1x, /gopulseup/assets/slotmachine-mob@2x-CdiYbGbO.png 2x" media="(max-width: 1439px)" />
+            <img class="hero-img" src="/gopulseup/assets/slotmachine-mob-kQRhqF8q.png" alt="slotmachine" loading="lazy" />
+        </picture>
+        <div class="disclaimer-wrapper">
+            <h2 class="disclaimer-title">DISCLAIMER</h2>
+            <p class="disclaimer-text">gopulseup.site IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF SUCCESS PLAYING THIS GAME CANNOT BE CONSIDERED THE SAME
+            AS SUCCESS IN REAL LIFE ACTIVITIES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY PLAYING THIS GAME.</p>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
