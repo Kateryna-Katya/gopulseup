@@ -106,3 +106,143 @@ font-size: 36px;
         margin-right: auto;
 }
 }
+/* about */
+.demo-container{
+    position: relative;
+}
+.about-text{
+    margin-top: 14px;
+    margin-bottom: 90px;
+}
+
+.demo-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto ;
+    height: 785px;
+}
+
+.game-img {
+    width: 335px;
+    height: 785px;
+}
+
+/* ===== КНОПКА ===== */
+
+.demo-btn {
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    cursor: pointer;
+    top: 80%;
+    left: 50%;
+    width: 231px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.demo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== ФОН ===== */
+
+.game-img {
+    width: 100%;
+    display: block;
+}
+
+/* ===== IFRAME ===== */
+
+.iframe-wrapper {
+    position: absolute;
+    top: 9%;
+    left: 39%;
+    transform: translateX(-48%);
+    width: 68%;
+    height: 54%;
+    z-index: 20;
+
+    /* 🔥 ГОЛОВНЕ ВИПРАВЛЕННЯ */
+    pointer-events: none;
+}
+
+#gameIframe {
+    width: 128%;
+    height: 150%;
+    border: none;
+    display: none;
+    background: #000;
+    border-radius: 15px;
+}
+
+/* АКТИВНИЙ СТАН */
+.iframe-wrapper.active {
+    pointer-events: auto;
+}
+
+#gameIframe.active {
+    display: block;
+}
+
+/* ===== КНОПКА ЗАКРИТТЯ ===== */
+
+#closeIframeBtn {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 9999;
+    /* 🔥 НАД iframe */
+    pointer-events: auto;
+}
+
+#closeIframeBtn.active {
+    display: block;
+}
+@media only screen and (min-width: 1440px) {
+ .about-text{
+    margin-bottom: 40px;
+ }
+ .iframe-wrapper {
+     position: absolute;
+     top: 6%;
+     left: 45%;
+     transform: translateX(-48%);
+     width: 68%;
+     height: 54%;
+     z-index: 20;
+
+     /* 🔥 ГОЛОВНЕ ВИПРАВЛЕННЯ */
+     pointer-events: none;
+ }
+
+ #gameIframe {
+     width: 111%;
+     height: 160%;
+     border: none;
+     display: none;
+     background: #000;
+     border-radius: 0;
+ }
+ .demo-btn {
+     position: absolute;
+     z-index: 10;
+     display: inline-block;
+     cursor: pointer;
+     top: 84%;
+     left: 50%;
+     width: 231px;
+     height: 70px;
+     transform: translate(-50%, -50%);
+ }
+}
+
