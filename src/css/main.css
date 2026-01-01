@@ -245,4 +245,76 @@ font-size: 36px;
      transform: translate(-50%, -50%);
  }
 }
+/* advantages */
+/* ===== SWIPER BASE (mobile first) ===== */
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
 
+.swiper-wrapper {
+    display: flex;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+}
+/* reviews */
+.reviews-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #f00;
+    opacity: 1;
+}
+
+.reviews-pagination .swiper-pagination-bullet-active {
+    background: #050300;
+}
+
+@media (max-width: 768px) {
+
+    /* ADVANTAGES */
+    .advantages-swiper .swiper-slide {
+        width: 100%;
+    }
+
+    /* REVIEWS */
+    .reviews-swiper .swiper-slide {
+        width: 100%;
+    }
+
+    /* SIMILAR */
+    .similar-swiper .swiper-slide {
+        width: 100%;
+    }
+}
+
+/* similar */
+.similar-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+@media (min-width: 769px) {
+
+    /* REVIEWS + SIMILAR — slider destroyed */
+    .reviews-swiper .swiper-wrapper,
+    .similar-swiper .swiper-wrapper {
+        display: flex !important;
+        gap: 24px;
+        transform: none !important;
+    }
+
+    .reviews-swiper .swiper-slide,
+    .similar-swiper .swiper-slide {
+        flex: 0 0 calc(33.333% - 16px);
+    }
+
+    /* ADVANTAGES — slider живий */
+    .advantages-swiper .swiper-wrapper {
+        display: flex;
+    }
+}
