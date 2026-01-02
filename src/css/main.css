@@ -367,7 +367,47 @@ font-family: "Afacad", sans-serif;
 .reviews-pagination .swiper-pagination-bullet-active {
     background: #050300;
 }
+.reviews-bell{
+    display: none;
+}
+.reviews-swiper-wrapper{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.reviews-slide{
+    border-radius: 50px;
+        padding: 45px 24px;
+        width: 265px;
+        min-height: 260px;
+        background: #e7ddea;
 
+        
+}
+.reviews-text{
+    height: 168px;
+    display: flex;
+    align-items: center;
+}
+.reviews-slide-img{
+    position: absolute;
+    top: -10px;
+}
+@media only screen and (min-width: 1440px) {
+    .reviews-swiper{
+        width: 1000px;
+    }
+  .reviews-swiper-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 44px;
+ 
+  }
+  .reviews-slide{
+    width: 265px !important;
+        height: 260px !important;
+  }
+}
 @media (max-width: 768px) {
 
     /* ADVANTAGES */

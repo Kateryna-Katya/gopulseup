@@ -1,22 +1,29 @@
 // ===== Swiper imports (npm) =====
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// Реєстрація модулів
+
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 /* ======================================================
    ADVANTAGES
    mobile: 1 slide
-   desktop (1440): 3 slides
+   desktop: 3 slides
    arrows: YES
-   slider: ALWAYS
+   autoplay: YES
 ====================================================== */
 const advantagesSwiper = new Swiper('.advantages-swiper', {
   spaceBetween: 16,
   speed: 600,
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: '.advantages-next',
@@ -24,29 +31,36 @@ const advantagesSwiper = new Swiper('.advantages-swiper', {
   },
 
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
     1440: {
       slidesPerView: 3,
     },
   },
+
+  slidesPerView: 1,
 });
 
 /* ======================================================
    REVIEWS
-   mobile: 1 slide
-   desktop: NO slider (destroy)
-   pagination: YES (custom bullets)
+   mobile ONLY
+   1 slide center + 2 sides
+   pagination: YES
+   autoplay: YES
 ====================================================== */
 let reviewsSwiper = null;
 
 function initReviewsSwiper() {
   if (window.innerWidth <= 768 && !reviewsSwiper) {
     reviewsSwiper = new Swiper('.reviews-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 16,
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 20,
       speed: 500,
+      loop: true,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
 
       pagination: {
         el: '.reviews-pagination',
@@ -63,9 +77,9 @@ function initReviewsSwiper() {
 
 /* ======================================================
    SIMILAR
-   mobile: 1 slide
-   arrows: BOTTOM
-   desktop: NO slider (destroy)
+   mobile ONLY
+   arrows bottom
+   autoplay: YES
 ====================================================== */
 let similarSwiper = null;
 
@@ -75,6 +89,12 @@ function initSimilarSwiper() {
       slidesPerView: 1,
       spaceBetween: 16,
       speed: 500,
+      loop: true,
+
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
 
       navigation: {
         nextEl: '.similar-next',
