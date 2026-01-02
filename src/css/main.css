@@ -78,7 +78,7 @@ padding: 18px 35px 0;
     position: relative;
     padding-left: 140px;
     padding-right: 140px;
-    padding-top: 100px;
+    padding-top: 150px;
    }
 .home-wrapper{
     width: 589px;
@@ -95,7 +95,7 @@ font-size: 36px;
 .hero-img{
     position: absolute;
     z-index: 2;
-    top: 9%;
+    top: 14%;
     right: 10%;
 }
 .disclaimer-wrapper{

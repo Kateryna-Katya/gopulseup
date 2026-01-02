@@ -1,44 +1,108 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+background: #b50104;
 }
-.nav {
+
+.header-container {
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
+
+
+.menu-button {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  border: none;
+background-color: inherit;
+  margin-left: auto;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.navigation-list {
+  display: none;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+
+/* Modal */
+.modal {
+  display: none;
+background: #b50104;
+  padding: 100px 24px;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  position: fixed;
+  top: 80px;
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  transform: translateX(-50%);
+  transition: visibility 0.3s ease;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: start;
+}
+
+
+.menu-list-item {
+font-family: 'Abhaya Libre', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  .header {
+    height: 104px;
+    border-bottom: 6px #fff solid;
+  }
+
+  .header-container {
+    padding: 35px 140px;
+    display: flex;
+
+    position: relative;
+
+  }
+
+  .header-img {
+    position: absolute;
+    display: block;
+    margin-right: 60px;
+    top: 10px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    margin-left: 300px;
+  }
+
+
+  .navigation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-family: 'Abhaya Libre', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  }
+
+
 }
