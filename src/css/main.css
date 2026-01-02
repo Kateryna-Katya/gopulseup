@@ -367,9 +367,6 @@ font-family: "Afacad", sans-serif;
 .reviews-pagination .swiper-pagination-bullet-active {
     background: #050300;
 }
-.reviews-bell{
-    display: none;
-}
 .reviews-swiper-wrapper{
     padding-top: 20px;
     padding-bottom: 60px;
@@ -392,9 +389,14 @@ font-family: "Afacad", sans-serif;
     position: absolute;
     top: -10px;
 }
+.reviews-pagination{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
 @media only screen and (min-width: 1440px) {
     .reviews-swiper{
-        width: 1000px;
+        width: 900px;
     }
   .reviews-swiper-wrapper{
     display: flex;
@@ -407,6 +409,13 @@ font-family: "Afacad", sans-serif;
     width: 265px !important;
         height: 260px !important;
   }
+  .reviews-section{
+background-image: url("/img/reviews/bel.png");
+background-repeat: no-repeat;
+background-position: bottom 70px right;
+background-size: 340px 495px;
+  }
+
 }
 @media (max-width: 768px) {
 
