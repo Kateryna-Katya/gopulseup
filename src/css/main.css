@@ -436,11 +436,93 @@ background-size: 340px 495px;
 }
 
 /* similar */
+.similar-section{
+    background-image: url("/img/similar/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.similar-title{
+        text-align: center;
+        color: #fff;
+}
+.similar-text{
+    margin-top: 14px;
+            text-align: center;
+                color: #fff;
+                margin-bottom: 55px;
+}
 .similar-controls {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+}
+.similar-btn-text {
+    position: absolute;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    top: 22%;
+    left: 44%;
+    transform: translateX(-10%);
+    z-index: 2;
+}
+.similar-container {
+    position: relative;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 100px;
+}
+
+.similar-controls {
+    position: absolute;
+    bottom: -30%;
+    left: 0%;
+    right: 0;
+width: 150px !important;
+margin-left: auto;
+margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 20%;
+    pointer-events: none;
+    width: 100%;
+}
+.similar-prev,
+.similar-next{
+    width: 51px !important;
+    height: 58px !important;
+}
+.similar-subtitle{
+    font-family: 'Abhaya Libre', sans-serif;
+        font-weight: 800;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 18px;
+}
+.similar-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.similar-button{
+    width: 304px;
+}
+@media only screen and (min-width: 1440px) {
+.similar-controls{
+    display: none;
+}
+.similar-container{
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 178px;
+}
+.similar-section{
+    background-image: url("/img/similar/desk.png");
+}
 }
 @media (min-width: 769px) {
 
