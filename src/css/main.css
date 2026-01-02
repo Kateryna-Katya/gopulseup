@@ -261,6 +261,101 @@ font-size: 36px;
     flex-shrink: 0;
     width: 100%;
 }
+.advantages-title{
+    margin-bottom: 33px;
+}
+.advantages-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-suntitle{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 60px;
+    font-family: "Afacad", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+        color: #38111c;
+        width: 264px;
+        text-align: center;
+        margin-left: auto;
+       margin-right: auto;
+}
+.advantages-text{
+    width: 264px;
+            text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+font-family: "Afacad", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: #38111c;
+}
+.advantages-prev,
+.advantages-next{
+    width: 80px !important;
+    height: 92px !important;
+}
+.advantages-container{
+    position: relative;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.advantages-controls {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    pointer-events: none;
+    width: 100%;
+}
+.advantages-prev,
+.advantages-next {
+    pointer-events: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.advantages-prev img,
+.advantages-next img {
+    display: block;
+  
+}
+.advantages-prev::after,
+.advantages-next::after {
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+    .advantages-container {
+        padding-left: 200px;
+        padding-right: 200px;
+        position: relative;
+    }
+
+.advantages-controls {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    pointer-events: none;
+    width: 1200px;
+}
+
+}
 /* reviews */
 .reviews-pagination .swiper-pagination-bullet {
     width: 12px;
